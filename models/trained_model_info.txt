@@ -1,0 +1,12 @@
+Download Model :-
+
+https://huggingface.co/bariumc/nepali_handwritten_trained_model/blob/main/res97_state.pth
+
+Model Information :-
+
+We have used ResNET101 pretrained model and then used the concept of transfer learning 
+to fine tune this model. By changing the last layer, we trained it on our own dataset. 
+The dataset information can be found in Datasets section of this repository. 
+
+
+
