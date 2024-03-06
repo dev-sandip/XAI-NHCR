@@ -1,0 +1,7 @@
+The dataset used to train our model can be found in :-
+
+https://www.kaggle.com/datasets/pujan9988/nepali-handwritten-characters
+
+Datasets Information 
+
+There are total 58 character (36 consonants, 12 vowels and 10 digits)
