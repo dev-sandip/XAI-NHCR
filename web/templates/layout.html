@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+<body>
+  {% include 'components/navbar.html' %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

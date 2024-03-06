@@ -1,0 +1,71 @@
+#nav-bar {
+    /* padding-top: 8px; */
+    padding-left: 8px;
+    /* padding-bottom: 50px; */
+    padding-right: 8px;
+
+
+    background-color: white;
+
+
+    display: flex;
+    align-items: center;
+    /* Ensure vertical alignment */
+    justify-content: space-between;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    /* Distribute evenly */
+}
+
+
+#nav-bar img {
+    max-height: 75px;
+    /* Adjust as needed */
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-area {
+    display: flex;
+}
+
+.logo-area {
+    display: flex;
+    flex: 1;
+
+
+
+    display: flex;
+    align-items: center;
+    /* Optional, depending on desired alignment */
+
+}
+
+.logo-area span {
+    padding-bottom: 0;
+    /* padding-top: 12px; */
+}
+
+#nav-bar span {
+    padding: 12px;
+    font-weight: bold;
+}
+
+#nav-bar span:hover {
+    /* background-color: rgb(180, 173, 173); */
+    justify-content: center;
+    cursor: pointer;
+    color: #0F79EF;
+
+}
+
+#nav-bar a.active {
+    color: #0F79EF;
+    /* text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px; */
+}

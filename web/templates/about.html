@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+
+</head>
+
+<body>
+
+    {% extends 'layout.html' %}
+
+    {% block content %}
+
+
+    <div class="container">
+
+        <h1>Developing an Interpretable Nepali Handwritten Character Recognizer</h1>
+
+        This project was driven by the desire to create a robust and informative character recognition system for the
+        Nepali
+        language. We believe that understanding how models make decisions is crucial for building trust and
+        transparency,
+        especially in culturally significant domains like handwriting recognition.
+
+
+        <h3>Technology Stack</h3>
+        <ul>
+            <li>
+                Programming language: Python
+            </li>
+            <li>
+                Deep learning libraries: PyTorch
+            </li>
+            <li>
+                Visualization tools:Matplotlib
+            </li>
+            <li>
+                Web Stack: FlaskI
+            </li>
+        </ul>
+
+        <!-- <h3>Future Plans</h3>
+
+        - Expanding character set recognition
+        - Enhancing interpretability methods
+        - Integrating with educational or assistive technologies
+
+        We are committed to advancing this project and its capabilities. We welcome your feedback and collaboration! -->
+
+        <h2>Metrices</h2>
+
+        <div id="confusion_matrix_cnt" style="width: 90%;"></div>
+
+
+        <h3>Classification Report</h3>
+
+        <div id="table-container">
+            <table id="my-table">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Precision</th>
+                        <th>Recall</th>
+                        <th>F1 score</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be added here -->
+                </tbody>
+            </table>
+
+            <!-- Pagination buttons -->
+            <button id="prev-btn">Previous</button>
+            <span id="page-info"></span>
+            <button id="next-btn">Next</button>
+        </div>
+
+
+
+
+        <script src="{{ url_for('static', filename='script/plotly.js') }}"></script>
+        <script src="{{ url_for('static', filename='script/metrices.js') }}"></script>
+
+
+
+    </div>
+
+    <script>
+        setIdActive("about-men");
+    </script>
+    {% endblock %}
+
+</body>
+
+</html>

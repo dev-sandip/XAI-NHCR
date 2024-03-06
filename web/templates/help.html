@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/help.css') }}">
+</head>
+
+<body>
+    {% extends 'layout.html' %}
+
+    {% block content %}
+
+    <div class="container">
+
+
+        <h1>Getting Started</h1>
+
+        <li> Upload a clear image of a handwritten Nepali character in supported formats (e.g., JPG, JPEG).</li>
+        <li> The recognized character will be displayed, along with a visualization of the pixels that influenced the
+            prediction.</li>
+
+
+
+
+        <h3>FAQ</h3>
+
+        <div class="faq">
+            <h3 class="faq-question">What character sets are supported?</h3>
+            <div class="faq-answer">
+                Currently, the model recognizes all basic Nepali characters (क्ष, त्र,ज्ञ,etc.).
+            </div>
+        </div>
+        <div class="faq">
+            <h3 class="faq-question">How accurate is the recognition?</h3>
+            <div class="faq-answer">
+                The accuracy rate is 97.5% on a standard test dataset.
+            </div>
+        </div>
+        <div class="faq">
+            <h3 class="faq-question">Will you add support for more features?</h3>
+            <div class="faq-answer">
+                We are actively working on improving the model and adding new
+                features. Stay tuned for updates!
+            </div>
+        </div>
+
+
+    </div>
+    <script src="{{ url_for('static', filename='script/faq.js') }}"></script>
+    <script>
+        setIdActive("help-men");
+    </script>
+    {% endblock %}
+
+
+</body>
+
+</html>

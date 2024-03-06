@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>अक्षर</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/info-panel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/dialog.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/popup.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/x-icon">
+</head>
+
+<body>
+
+    {% extends 'layout.html' %}
+
+    {% block content %}
+
+
+    <div id="blank-area">
+        <img id="banner" src="{{ url_for('static', filename='banner.png') }}">
+    </div>
+
+
+
+    <!-- <div id="container">
+       
+
+    </div> -->
+
+
+
+    <div class="popup">
+        <div class="top-bar">
+            <span class="close-btn">&times;</span>
+        </div>
+        <img src="" class="large-image" alt="">
+    </div>
+
+
+
+
+    <div class="info-panel">
+        <div class="pred-info">
+            <h3>Predicted Label: <span></span></h3>
+            <h5>Top 3 Predictions:</h5>
+            <ul>
+            </ul>
+        </div>
+
+        <div class="bar"></div>
+
+        <div class="img-info">
+            <h3>Photos</h3>
+            <h6 class="title">Upload your file here</h6>
+            <div id="image-container">
+                <img id='file-image'>
+                <img id='result-image' class="image">
+            </div>
+
+
+            <div style="display: flex;flex-direction: row;justify-content: flex-end;">
+                <label style="margin-right: 12px;">
+                    <button class="button" id="try-btn" style="background-color: #1363EF;" onclick="showDialog()">Try
+                        Yourself</button>
+                </label>
+
+                <label for="file-input">
+                    <input type="file" id="file-input" class="file-input" accept="image/jpeg,image/jpg">
+                    <button class="button" id="button">Choose file </button>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="overlay"></div>
+    <div id="dialog-area" style="display: none;">
+
+        <div id="close-cntr"> <span
+                style="padding-left: 90px; padding-top: 15px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 18px;font-weight: bold;">
+                PLAYGROUND</span>
+            <div style="flex: 1;"></div><span class="close" onclick="closeDialog()">×</span>
+        </div>
+
+        <div class="drawing-board">
+            <canvas id="drawing-board"></canvas>
+        </div>
+        <span
+            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 12px;font-weight: 600; color: grey;">NOTE:
+            Make sure to cover the drawing area</span>
+        <div class="action-section">
+            <img src="{{ url_for('static', filename='clear.png') }}" id="clear-btn" onclick="clearCanvas()">
+            <button class="button" style="background-color: #1363EF;" id="canvas-send">Submit</button>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="error-message"></div>
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='script/dialog.js') }}"></script>
+    <script src="{{ url_for('static', filename='script/popup.js') }}"></script>
+
+
+    <script>
+        setIdActive("home-men");
+    </script>
+
+    {% endblock %}
+
+
+
+
+</body>
+
+</html>

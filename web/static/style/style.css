@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    /* padding: 20px; */
+    background-color: #f2f2f2;
+}
+
+
+#error-message {
+    color: white;
+    background-color: red;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+
+
+    font: size 32px;
+    font-weight: bold;
+
+    position: fixed;
+
+    top: 90%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+
+    /* Center the message horizontally and vertically */
+    width: 400px;
+    /* Specify desired width */
+    text-align: center;
+    z-index: 999;
+    /* Ensure the message is on top of other elements */
+    animation: fade-in 0.5s ease-in-out;
+    /* Add a smooth fade-in animation */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#error-message.fade-out {
+    animation: fade-out 0.5s ease-in-out backwards;
+    /* Add a smooth fade-out animation */
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+

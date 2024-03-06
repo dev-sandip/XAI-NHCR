@@ -1,0 +1,93 @@
+#my-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* border-radius: 8px; */
+    border-radius: 8px;
+}
+
+.container {
+    margin: 2%;
+}
+
+#table-container {
+    border-radius: 12px;
+
+}
+
+#my-table th,
+#my-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background: #e6e1e1;
+}
+
+#my-table th {
+    background-color: #a7cefa;
+    color: white;
+}
+
+#table-container button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#table-container button:hover {
+    /* background-color: #45a049; */
+    border-color: #0F79EF;
+}
+
+
+#my-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    /* Add border radius for roundish feel */
+}
+
+#my-table th,
+#my-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: #333;
+    /* Set text color */
+}
+
+tr:nth-child(odd) {
+    background: #f9f9f9;
+    /* Lighter background color for odd rows */
+}
+
+#my-table th {
+    background-color: #4a90e2;
+    /* Blue background for table header */
+    color: white;
+}
+
+#table-container button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #4a90e2;
+    /* Blue button background */
+    color: white;
+    /* Button text color */
+    border: 1px solid #4a90e2;
+    /* Button border color */
+    border-radius: 4px;
+    /* Button border radius */
+}
+
+#table-container button:hover {
+    background-color: #0F79EF;
+    /* Darker blue on hover */
+    border-color: #0F79EF;
+    /* Darker blue for border on hover */
+}
