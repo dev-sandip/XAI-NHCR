@@ -29,10 +29,6 @@ To provide insights into the model's decision-making process, we implement the i
 
 We've deployed this system as a web application using Flask. Users can upload files or utilize the embedded playground to draw characters for prediction. Prediction results, along with overlayed images, are displayed for better understanding.
 
-## Performance
-
-The system achieves an accuracy of 97.52% on the test dataset. Additional metrics such as classification reports and confusion matrices are available on the system's "About" page.
-
 ## Team Members
 This project was done by our team :-
 
@@ -48,5 +44,9 @@ This project was done by our team :-
 
 - The website is not responsive and only works on larger screens for now.
 - Only the integrated gradient technique has been incorporated for Explainable Artificial Intelligence (XAI). Other techniques may be explored in future iterations.
+
+## Download and Modification
+
+You can download and modify our project if you wish to, giving credit and acknowledgment. Feel free to clone this repository and use our project as a foundation for your own work.
 
 Thank you for your interest in our Explanable Nepali Handwritten Character Recognition System! If you have any questions or feedback, feel free to reach out. Happy coding!
